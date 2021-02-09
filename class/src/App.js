@@ -7,11 +7,11 @@ class App extends Component {
     super();
 
     this.state = {
-      count: 5
+      count: 0
     }
   }
 
-  handleChange = (event) => {
+  increment = (event) => {
 
     console.log(event.target)
 
@@ -24,6 +24,14 @@ class App extends Component {
     // this.state.count = this.state.count + 1 (NEVER DO THIS)
   }
 
+  decrement = (event) => {
+    
+    this.setState({
+      count: this.state.count - 1
+    })
+  }
+  
+
 
   render() {
 
@@ -35,7 +43,9 @@ class App extends Component {
 
     return (
       <>
-        <button onClick={this.handleChange}>{this.state.count}</button>
+        <button onClick={this.increment}>+</button>
+        <div>{this.state.count}</div>
+        <button onClick={this.decrement}>-</button>
       </>
     )
   }
