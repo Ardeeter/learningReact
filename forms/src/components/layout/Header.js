@@ -15,6 +15,7 @@ const Header = () => {
       <Link className="nav-item nav-link" href="/forms">Class Forms</Link>
       <Link className="nav-item nav-link" href="/formhooks">Hook Forms</Link>
       <Link className="nav-item nav-link" href="/lifting_state">Lifting State</Link>
+      <Link className="nav-item nav-link" href="/project_management">Project Management</Link>
     </div>
   </div>
 </nav>
