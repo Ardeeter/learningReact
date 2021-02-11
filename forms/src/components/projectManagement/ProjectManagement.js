@@ -12,20 +12,24 @@ const ProjectManagement = () => {
               {
                   id: uuidv4(),
                   category: "Front-End",
-                  title: "Javascript"
+                  title: "JavaScript"
               },
               {
                   id: uuidv4(),
                   category: "Back-End",
-                  title: "Node"
+                  title: "Node.js"
               },
               {
                   id: uuidv4(),
                   category: "Front-End",
-                  title: "React"
+                  title: "React.js"
               }
       ])
     }, [])
+
+    const handleAddProject = (newProject) => {
+        setProjects([newProject, ...projects])
+    }
 
 
   return (
@@ -43,7 +47,8 @@ const ProjectManagement = () => {
                     Add Project
                 </div>
                 <div className="card-body">
-                    <AddProject />
+                    <AddProject addProject={(project) => handleAddProject(project)}/>
+                    
                 </div>
             </div>
             {/* End of Card */}
