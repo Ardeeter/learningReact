@@ -4,6 +4,7 @@ import App from './App';
 import BaseLayout from './components/layout/BaseLayout'
 import Forms from './components/Forms'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/styles.css'
 import {
   BrowserRouter as Router,
   Route, Switch
