@@ -13,8 +13,8 @@ const Movies = () => {
 
             const response = await fetch(url)
             const data = await response.json()
-            const [item] = data.results.Search;
-            setMovies(item)
+            console.log(data);
+            setMovies(data.Search)
 
         
     }, []);
