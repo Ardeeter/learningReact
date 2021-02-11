@@ -27,7 +27,7 @@ class Parent extends Component {
   render() {
     return (
       <>
-        <h1 className= "text-center mt-5">Lifting State</h1>
+        <h1 className= "text-center mt-5">Lifting State with Class</h1>
 
         <div className="row mt-5">
             <div className="col-6 offset-3 formColor p-5 formFont">
