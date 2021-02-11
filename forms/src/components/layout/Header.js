@@ -11,9 +11,10 @@ const Header = () => {
   </button>
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav ml-auto">
-      <Link className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></Link>
-      <Link className="nav-item nav-link" href="#">Class Forms</Link>
-      <Link className="nav-item nav-link" href="#">Hook Forms</Link>
+      <Link className="nav-item nav-link active" href="/">Home <span className="sr-only">(current)</span></Link>
+      <Link className="nav-item nav-link" href="/forms">Class Forms</Link>
+      <Link className="nav-item nav-link" href="/formhooks">Hook Forms</Link>
+      <Link className="nav-item nav-link" href="/lifting_state">Lifting State</Link>
     </div>
   </div>
 </nav>
