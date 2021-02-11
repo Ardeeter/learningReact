@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import BaseLayout from './components/layout/BaseLayout'
 import Forms from './components/Forms'
+import FormHooks from './components/FormHooks'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles.css'
 import {
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Switch>
           <Route exact path='/' component={App} />
           <Route path='/forms' component={Forms} />
+          <Route path='/formhooks' component={FormHooks} />
           <Route component={NoMatch} />
         </Switch>
       </BaseLayout>

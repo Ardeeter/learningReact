@@ -12,7 +12,8 @@ const Header = () => {
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav ml-auto">
       <Link className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></Link>
-      <Link className="nav-item nav-link" href="#">Forms</Link>
+      <Link className="nav-item nav-link" href="#">Class Forms</Link>
+      <Link className="nav-item nav-link" href="#">Hook Forms</Link>
     </div>
   </div>
 </nav>
