@@ -1,13 +1,16 @@
 import React from 'react'
+import ProjectItem from './ProjectItem'
 
 
-const Project = ({projects}) => {
+const Project = ({projects, onDelete}) => {
   return (
     <>
+    <ul>
       {projects.map(project => {
-        return <li key={project.id}>{project.title} - {project.category}</li>
+        return <ProjectItem key={project.id} project={project} onDelete={project.onDelete}/>
       }
       )}
+    </ul>
     </>
   )
 }

@@ -30,7 +30,19 @@ const ProjectManagement = () => {
     const handleAddProject = (newProject) => {
         setProjects([newProject, ...projects])
     }
+    
+    const handleRemoveProject = (id) => { //3 [3, 4, 5, 6, 7]
 
+        // spread to prevent mutation of old state
+        let oldProjects = [...projects];
+
+        let filteredProjects = oldProjects.filter(project => {
+            return id != project.id
+        })
+
+        //state is updated with new filtered projects
+        setProjects(filteredProjects)
+    }
 
   return (
     <>
@@ -58,7 +70,7 @@ const ProjectManagement = () => {
     {/* End of Row */}
     <div className="row">
         <div className="col-6 offset-3 mt-4">
-            <Project projects={projects}/>
+            <Project onDelete={(id)=>handleRemoveProject(id)} projects={projects}/>
         </div>
     </div>
 
